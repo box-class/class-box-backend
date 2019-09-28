@@ -1,199 +1,37 @@
-Started GET "/manager/get_info" for ::1 at 2019-07-29 21:36:11 -0500
-  
-ActionController::RoutingError (No route matches [GET] "/manager/get_info"):
-  
-actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.3) lib/rails/engine.rb:524:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/favicon.ico" for ::1 at 2019-07-29 21:36:11 -0500
-  
-ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
-  
-actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.3) lib/rails/engine.rb:524:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/class/index" for ::1 at 2019-07-29 21:36:20 -0500
-Processing by ClassController#index as HTML
-Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
-
-
-  
-NoMethodError (undefined method `json_response' for #<ClassController:0x007faff2509a20>):
-  
-app/controllers/class_controller.rb:4:in `index'
-Started GET "/class/index" for ::1 at 2019-07-29 21:38:27 -0500
-Processing by ClassController#index as HTML
-Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
-
-
-  
-NoMethodError (undefined method `json_response' for #<ClassController:0x007faff2ccb470>):
-  
-app/controllers/class_controller.rb:4:in `index'
-Started GET "/class/index" for ::1 at 2019-07-29 21:39:28 -0500
-Processing by ClassController#index as HTML
-Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
-
-
-  
-NoMethodError (undefined method `json_response' for #<ClassController:0x007faff24ea468>):
-  
-app/controllers/class_controller.rb:4:in `index'
-Started GET "/class/index" for ::1 at 2019-07-29 21:39:46 -0500
-Processing by ClassController#index as HTML
-Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
-
-
-  
-NameError (undefined local variable or method `string' for #<ClassController:0x007faff2c33dc8>
-Did you mean?  String):
-  
-app/controllers/class_controller.rb:4:in `index'
-Started GET "/class/index" for ::1 at 2019-07-29 21:40:19 -0500
-Processing by ClassController#index as HTML
-Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
-
-
-  
-NoMethodError (undefined method `new' for #<ClassController:0x007faff2c4b158>):
-  
-app/controllers/class_controller.rb:4:in `index'
-Started GET "/class/index" for ::1 at 2019-07-29 21:41:40 -0500
-Processing by ClassController#index as HTML
-Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
-
-
-  
-NoMethodError (undefined method `json_response' for #<ClassController:0x007faff3c322d8>):
-  
-app/controllers/class_controller.rb:4:in `index'
-Started GET "/class/index" for ::1 at 2019-07-29 21:50:05 -0500
-  
-ActiveRecord::PendingMigrationError (
-
-Migrations are pending. To resolve this issue, run:
-
-        bin/rails db:migrate RAILS_ENV=development
-
-):
-  
-activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
-activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
-actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.3) lib/rails/engine.rb:524:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/class/index" for ::1 at 2019-07-29 21:54:26 -0500
-  
-ActionController::RoutingError (uninitialized constant ClassController):
-  
-bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
-bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
-bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
-bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
-activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
-activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
-activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
-activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
-activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
-actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
-actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
-actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
-actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
-actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
-actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
-actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
-actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
-rack (2.0.7) lib/rack/etag.rb:25:in `call'
-rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
-rack (2.0.7) lib/rack/head.rb:12:in `call'
-activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
-actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.3) lib/rails/engine.rb:524:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/" for ::1 at 2019-07-29 21:54:29 -0500
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /Users/Ivan/.rvm/gems/ruby-2.4.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /Users/Ivan/.rvm/gems/ruby-2.4.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
-Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
-
-
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCourses (20190927204120)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "courses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "courseId" varchar, "shortName" varchar, "name" varchar, "credits" integer, "time" integer, "days" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927204120"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDegrees (20190927205134)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "degrees" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "major" varchar, "minor" varchar, "course_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a15e9f56fc"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_degrees_on_course_id" ON "degrees" ("course_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927205134"]]
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateStudents (20190927210628)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "studentId" varchar, "firstName" varchar, "lastName" varchar, "dob" date, "address" varchar, "schoolName" varchar, "degree_id" integer NOT NULL, "startDate" date, "projectedEd" date, "gpa" decimal, "course_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_ce4761e5dd"
+FOREIGN KEY ("degree_id")
+  REFERENCES "degrees" ("id")
+, CONSTRAINT "fk_rails_a258d82422"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_students_on_degree_id" ON "students" ("degree_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_students_on_course_id" ON "students" ("course_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927210628"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-27 21:12:39.627788"], ["updated_at", "2019-09-27 21:12:39.627788"]]
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
