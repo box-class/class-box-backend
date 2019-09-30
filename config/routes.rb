@@ -5,4 +5,11 @@ Rails.application.routes.draw do
     resources :degree
     resources :courses
   end
+
+  resources :courses
+
+  resources :degrees
+
+  resources :students
+
 end

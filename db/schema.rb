@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_09_27_210628) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "courses", force: :cascade do |t|
     t.string "courseId"
     t.string "shortName"
@@ -26,7 +29,7 @@ ActiveRecord::Schema.define(version: 2019_09_27_210628) do
   create_table "degrees", force: :cascade do |t|
     t.string "major"
     t.string "minor"
-    t.integer "course_id", null: false
+    t.bigint "course_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["course_id"], name: "index_degrees_on_course_id"
@@ -39,11 +42,11 @@ ActiveRecord::Schema.define(version: 2019_09_27_210628) do
     t.date "dob"
     t.string "address"
     t.string "schoolName"
-    t.integer "degree_id", null: false
+    t.bigint "degree_id", null: false
     t.date "startDate"
     t.date "projectedEd"
     t.decimal "gpa"
-    t.integer "course_id", null: false
+    t.bigint "course_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["course_id"], name: "index_students_on_course_id"
