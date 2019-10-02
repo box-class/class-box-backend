@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_27_210628) do
+ActiveRecord::Schema.define(version: 2019_09_27_211136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,17 +22,19 @@ ActiveRecord::Schema.define(version: 2019_09_27_210628) do
     t.integer "credits"
     t.integer "time"
     t.string "days"
+    t.bigint "degree_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["degree_id"], name: "index_courses_on_degree_id"
   end
 
   create_table "degrees", force: :cascade do |t|
     t.string "major"
     t.string "minor"
-    t.bigint "course_id", null: false
+    t.bigint "students_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["course_id"], name: "index_degrees_on_course_id"
+    t.index ["students_id"], name: "index_degrees_on_students_id"
   end
 
   create_table "students", force: :cascade do |t|
@@ -42,18 +44,13 @@ ActiveRecord::Schema.define(version: 2019_09_27_210628) do
     t.date "dob"
     t.string "address"
     t.string "schoolName"
-    t.bigint "degree_id", null: false
     t.date "startDate"
     t.date "projectedEd"
     t.decimal "gpa"
-    t.bigint "course_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["course_id"], name: "index_students_on_course_id"
-    t.index ["degree_id"], name: "index_students_on_degree_id"
   end
 
-  add_foreign_key "degrees", "courses"
-  add_foreign_key "students", "courses"
-  add_foreign_key "students", "degrees"
+  add_foreign_key "courses", "degrees"
+  add_foreign_key "degrees", "students", column: "students_id"
 end

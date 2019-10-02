@@ -7,6 +7,7 @@ class CreateCourses < ActiveRecord::Migration[6.0]
       t.integer :credits
       t.integer :time
       t.string :days
+      t.references :degree, null: false, foreign_key: true
 
       t.timestamps
     end

@@ -1,4 +1,3 @@
 class Student < ApplicationRecord
-  has_one :degrees
-  has_many :courses
+  has_one :degree
 end

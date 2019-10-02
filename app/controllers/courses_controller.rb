@@ -15,7 +15,7 @@ class CoursesController < ApplicationController
 
     def course_params
         # whitelist params
-        params.permit(:courseId)
+        params.permit(:course, :courseId, :shortName, :name, :credits, :time, :days)
     end
 
 
