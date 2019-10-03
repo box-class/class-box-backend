@@ -1,11 +1,12 @@
 class CoursesController < ApplicationController
 
     def index 
-        @course = Course.all
+        @courses = Course.all
+        json_response(@courses)
     end
 
     def show 
-        @course = Course.find(params[:id])
+        json_response(Course.find(params[:id]))
     end
 
     def create
@@ -15,7 +16,7 @@ class CoursesController < ApplicationController
 
     def course_params
         # whitelist params
-        params.permit(:course, :courseId, :shortName, :name, :credits, :time, :days)
+        params.permit(:courseId, :shortName, :name, :credits, :time, :days, :degree_id)
     end
 
 

@@ -7,10 +7,6 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :courses
-
-  resources :degrees
-
   resources :degrees do 
     resources :courses
   end
@@ -19,5 +15,6 @@ Rails.application.routes.draw do
     resource :degrees
   end
 
+  resources :courses
 
 end

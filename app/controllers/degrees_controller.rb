@@ -6,7 +6,7 @@ class DegreesController < ApplicationController
     end
 
     def show
-        json_response(@degrees)
+        json_response(Degree.find(params[:id]))
     end
 
     def create
@@ -16,7 +16,7 @@ class DegreesController < ApplicationController
 
     private
     def degree_params
-        params.require(:degree).permit(:minor, :major, :student_id)
+        params.permit(:minor, :major, :student_id)
     end
 
 end
