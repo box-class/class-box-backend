@@ -31,10 +31,10 @@ ActiveRecord::Schema.define(version: 2019_10_03_141507) do
   create_table "degrees", force: :cascade do |t|
     t.string "major"
     t.string "minor"
-    t.bigint "students_id", null: false
+    t.bigint "student_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["students_id"], name: "index_degrees_on_students_id"
+    t.index ["student_id"], name: "index_degrees_on_student_id"
   end
 
   create_table "students", force: :cascade do |t|
@@ -60,5 +60,5 @@ ActiveRecord::Schema.define(version: 2019_10_03_141507) do
   end
 
   add_foreign_key "courses", "degrees"
-  add_foreign_key "degrees", "students", column: "students_id"
+  add_foreign_key "degrees", "students"
 end
