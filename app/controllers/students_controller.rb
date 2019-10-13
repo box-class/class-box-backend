@@ -1,12 +1,12 @@
 class StudentsController < ApplicationController
 
     def index
-        @students = current_user.student
+        @students = Student.all
         json_response(@students)
     end
 
     def show
-        json_response(current_user.Student.find(params[:id]))
+        json_response(@students)
     end
 
     def create 
