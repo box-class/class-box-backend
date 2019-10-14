@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
     end
 
     def show
-        json_response(@students)
+        json_response(Student.find(params[:id]))
     end
 
     def create 
