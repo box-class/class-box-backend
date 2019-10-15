@@ -1,16 +1,16 @@
 class CoursesController < ApplicationController
 
     def index 
-        @courses = current_user.all
+        @courses = Course.all
         json_response(@courses)
     end
 
     def show 
-        json_response(current_user.find(params[:id]))
+        json_response(Course.find(params[:id]))
     end
 
     def create
-        @create = current_user.create!(course_params)
+        @create = Course.create!(course_params)
         json_response(@create, :created)
     end
 
