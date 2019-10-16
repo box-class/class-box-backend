@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
 
     def index
-        @students = Student.find_by(studentId: @current_user.student_id)
+        @students = Student.find_by(student_id: @current_user.student_id)
         json_response(@students)
     end
 
@@ -14,6 +14,6 @@ class StudentsController < ApplicationController
 
     def todo_params
         # whitelist params
-        params.permit(:studentId, :firstName, :lastName, :dob, :address, :schoolName, :startDate, :projectedEd, :gpa, :student)
+        params.permit(:student_id, :first_name, :last_name, :dob, :address, :school_name, :start_date, :projected_end_date, :gpa, :student)
       end
 end
