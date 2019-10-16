@@ -1,19 +1,14 @@
 class StudentsController < ApplicationController
 
     def index
-        @students = Student.all
+        @students = Student.find_by(studentId: @current_user.student_id)
         json_response(@students)
-    end
-
-    def show
-        json_response(Student.find(params[:id]))
     end
 
     def create 
         @student = Student.create!(todo_params)
         json_response(@student, :created)
     end
-
 
     private 
 

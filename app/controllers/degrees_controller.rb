@@ -16,7 +16,7 @@ class DegreesController < ApplicationController
 
     private
     def degree_params
-        params.permit(:minor, :major, :student_id)
+        params.permit(:minor, :major, :degreeName)
     end
 
 end
