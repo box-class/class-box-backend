@@ -23,6 +23,14 @@ module ExceptionHandler
       rescue_from ActiveRecord::RecordInvalid do |e|
         json_response({ message: e.message }, :unprocessable_entity)
       end
+
+      rescue_from ActiveRecord::RecordNotUnique do |e|
+        json_response({ message: 'Email is already registered', invalidEmail: true }, :unprocessable_entity)
+      end
+
+      rescue_from ActiveRecord::InvalidForeignKey do |e|
+        json_response({message: 'Student doesn\'t exists', invalidStudent: true}, :unprocessable_entity)
+      end
     end
 
 

@@ -19,7 +19,7 @@ class UsersController < ApplicationController
       :email,
       :password,
       :password_confirmation,
-      :studentId
+      :student_id
     )
   end
 

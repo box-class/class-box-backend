@@ -18,7 +18,7 @@ class AuthorizeApiRequest
     def user
       # check if user is in the database
       # memoize user object
-      @user ||= User.find_by(studentId: decoded_auth_token[:student_id]) if decoded_auth_token
+      @user ||= User.find_by(student_id: decoded_auth_token[:student_id]) if decoded_auth_token
       # handle user not found
     rescue ActiveRecord::RecordNotFound => e
       # raise custom error

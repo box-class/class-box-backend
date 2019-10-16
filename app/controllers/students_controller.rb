@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
 
     def index
-        @students = Student.find_by(studentId: @current_user.studentId)
+        @students = Student.find_by(studentId: @current_user.student_id)
         json_response(@students)
     end
 
@@ -9,7 +9,6 @@ class StudentsController < ApplicationController
         @student = Student.create!(todo_params)
         json_response(@student, :created)
     end
-
 
     private 
 
